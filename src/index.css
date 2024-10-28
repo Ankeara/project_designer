@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ========= colors ========= */
+  /* Colors mode HSL(hue, saturation, lightness */
+  --background-body-light: #f0f0f0;
+  --background-dark: #ffffff;
+  --background-box-light: rgb(247, 247, 247);
+  --background-box-item-light: #ffffff;
+  --color-light-category: #666666;
+  --color-light-title: #373737;
+  --color-light-link-to: #6e6e6e;
+  --navbar-light: rgb(255, 255, 255);
+  --border-color-light: rgb(255, 255, 255);
+  --border-color-copy-light: rgb(230, 230, 230);
+  --border-outside-item-img-light: rgb(247, 247, 247);
+  --btn-hireme-submit-light: rgb(20, 20, 20);
+  --btn-copy-light: rgb(255, 255, 255);
+  --dot-light: #cccccc;
+  --shadow-copy-light-color-1: rgb(240, 240, 240);
+  --shadow-copy-light-color-2: rgba(0, 0, 0, 0.08);
+  --shadow-item-light-color-1: rgb(240, 240, 240);
+  --shadow-item-light-color-2: rgba(0, 0, 0, 0.08);
+  --color-img-light: rgb(247, 247, 247);
+  --bg-img-project-light: rgb(247, 247, 247);
+  --border-color-img-project-light: rgb(240, 240, 240);
+  --shadow-box-item-1-light: rgb(240, 240, 240);
+  --shadow-box-item-2-light: rgba(0, 0, 0, 0.05);
+  --border-color-item-light: rgb(240, 240, 240);
+  --bg-color-social-light: rgb(255, 255, 255);
+  --shadow-social-1-light: rgb(240, 240, 240);
+  --shadow-social-2-light: rgba(0, 0, 0, 0.08);
+  --border-color-social-light: rgb(230, 230, 230);
+  --border-color-about-img-light: rgb(66, 66, 66);
+  --bg-about-img-light: rgb(55, 55, 55);
+  --input-contact-bg-light: rgb(247, 247, 247);
+  --border-input-light: rgb(230, 230, 230);
+  --placehorder-color-light: rgb(160, 160, 160);
+  --color-input-contact-light: rgb(55, 55, 55);
+  --btn-input-submit-light: rgb(20, 20, 20);
+  --color-btn-submit-light: rgb(255, 255, 255);
+  /* Dark mode color */
+  --background-body-dark: #161616;
+  --background-dark: #212121;
+  --background-box-dark: rgb(44, 44, 44);
+  --background-box-item-dark: #373737;
+  --color-dark-category: #c0c0c0;
+  --color-dark-title: #ffffff;
+  --navbar-dark: rgb(33, 33, 33);
+  --border-color-dark: rgb(44, 44, 44);
+  --border-color-copy-dark: rgb(43, 43, 43);
+  --border-outside-item-img-dark: rgb(66, 66, 66);
+  --btn-hireme-submit-dark: rgb(56, 56, 56);
+  --btn-copy-dark: rgb(33, 33, 33);
+  --dot-dark: #616161;
+  --shadow-copy-dark-color-1: rgb(66, 66, 66);
+  --shadow-copy-dark-color-2: rgba(0, 0, 0, 0.16);
+  --shadow-item-dark-color-1: #0a0a0a0f;
+  --shadow-item-dark-color-2: #0a0a0a0a;
+  --color-img-dark: rgb(44, 44, 44);
+  --bg-img-project-dark: rgb(44, 44, 44);
+  --border-color-img-project-dark: rgb(66, 66, 66);
+  --shadow-box-item-1-dark: rgb(66, 66, 66);
+  --shadow-box-item-2-dark: rgba(0, 0, 0, 0.16);
+  --border-color-item-dark: rgb(66, 66, 66);
+  --bg-color-social-dark: rgb(33, 33, 33);
+  --shadow-social-1-dark: rgb(66, 66, 66);
+  --shadow-social-2-dark: rgba(0, 0, 0, 0.16);
+  --border-color-social-dark: rgb(43, 43, 43);
+  --border-color-about-img-dark: rgb(66, 66, 66);
+  --bg-about-img-dark: rgb(55, 55, 55);
+  --input-contact-bg-dark: rgb(44, 44, 44);
+  --border-input-dark: rgb(43, 43, 43);
+  --placehorder-color-dark: rgb(129, 129, 129);
+  --color-input-contact-dark: rgb(255, 255, 255);
+  --btn-input-submit-dark: rgb(56, 56, 56);
+  --color-btn-submit-dark: rgb(255, 255, 255);
+  /* ========= Font and typography ========= */
+  /* .5rem= 8px | 1rem = 16px */
+  --body-font: "Roboto Mono", monospace;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  /* ========= Font weight =========*/
+  --font-regular: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* ========= Box shadow =========*/
+  --shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  --shadow-dark: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+  --border: #212529; /* opacity 20% */
+  --border: #1e1e1e; /* opacity 67% */
+
+  /* ========= Border Redius =========*/
+  --border-radius: 10px;
+  --border-radius-2: 6px;
+}
+
+/* Light Mode Variables */
+:root.dark-mode {
+  --background-body: var(--background-body-light);
+  --background-box: var(--background-box-light);
+  --background-box-item: var(--background-box-item-light);
+  --navbar-color: var(--navbar-light);
+  --border-color: var(--border-color-light);
+  --border-color-copy: var(--border-color-copy-lightt);
+  --btn-hireme-color: var(--btn-hireme-submit-light);
+  --btn-copy-color: var(--btn-copy-light);
+  --btn-copy-bg: var(--btn-copy-light);
+  --text-color: var(--color-light-title);
+  --dot-bg: var(--dot-light);
+  --box-shadow-btn-copy-1: var(--shadow-copy-light-color-1);
+  --box-shadow-btn-copy-2: var(--shadow-copy-light-color-2);
+  --color-img: var(--color-img-light);
+  --bg-img-project: var(--bg-img-project-light);
+  --border-color-img-project: var(--border-color-img-project-light);
+  --border-color-item: var(--border-color-item-light);
+  --shadow-box-item-1: var(--shadow-box-item-1-light);
+  --shadow-box-item-2: var(--shadow-box-item-2-light);
+  --bg-color-social: var(--bg-color-social-light);
+  --border-color-social: var(--border-color-social-light);
+  --shadow-social-1: var(--shadow-social-1-light);
+  --shadow-social-2: var(--shadow-social-2-light);
+  --input-contact-bg: var(--input-contact-bg-light);
+  --border-input: var(--border-input-light);
+  --placehorder-color: var(--placehorder-color-light);
+  --color-input-contact: var(--color-input-contact-light);
+  --btn-input-submit: var(--btn-input-submit-light);
+  --color-btn-submit: var(--color-btn-submit-light);
+}
+
+/* Dark Mode Variables */
+:root {
+  --background-body: var(--background-body-dark);
+  --background-box: var(--background-box-dark);
+  --background-box-item: var(--background-box-item-dark);
+  --navbar-color: var(--navbar-dark);
+  --border-color: var(--border-color-dark);
+  --border-color-copy: var(--border-color-copy-dark);
+  --btn-hireme-color: var(--btn-hireme-submit-dark);
+  --btn-copy-bg: var(--btn-copy-dark);
+  --text-color: var(--color-dark-title);
+  --dot-bg: var(--dot-dark);
+  --box-shadow-btn-copy-1: var(--shadow-copy-dark-color-1);
+  --box-shadow-btn-copy-2: var(--shadow-copy-dark-color-2);
+  --color-img: var(--color-img-dark);
+  --bg-img-project: var(--bg-img-project-dark);
+  --border-color-img-project: var(--border-color-img-project-dark);
+  --border-color-item: var(--border-color-item-dark);
+  --shadow-box-item-1: var(--shadow-box-item-1-dark);
+  --shadow-box-item-2: var(--shadow-box-item-2-dark);
+  --bg-color-social: var(--bg-color-social-dark);
+  --border-color-social: var(--border-color-social-dark);
+  --shadow-social-1: var(--shadow-social-1-dark);
+  --shadow-social-2: var(--shadow-social-2-dark);
+  --input-contact-bg: var(--input-contact-bg-dark);
+  --border-input: var(--border-input-dark);
+  --placehorder-color: var(--placehorder-color-dark);
+  --color-input-contact: var(--color-input-contact-dark);
+  --btn-input-submit: var(--btn-input-submit-dark);
+  --color-btn-submit: var(--color-btn-submit-dark);
+}
+
+body {
+  background-color: var(--background-body);
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+
+/* Navbar */
+.navbar,
+.home {
+  background-color: var(--navbar-color);
+  border-color: var(--border-color);
+}
+
+.link {
+  color: var(--text-color);
+}
+
+.toggle_mode {
+  cursor: pointer;
+}
