@@ -80,7 +80,7 @@ const closeAlert = () => {
               <li><strong>Development Setup:</strong>: ou are familiar with <strong>Vite</strong> for building and optimizing React applications, preferring efficient tools that boost productivity.</li>
           </ul>
           <div className="view__more flex items-center justify-center mt-5 mb-5">
-            <a href="https://porfoliome-host.vercel.app/" target="blank" className="flex items-center justify-center ">See More About Me <MoveRight className="ml-3" size={16} absoluteStrokeWidth /></a>
+            <a href="https://ankearaportfolio.vercel.app/about" target="blank" className="flex items-center justify-center ">See More About Me <MoveRight className="ml-3" size={16} absoluteStrokeWidth /></a>
           </div>
 
           <h2 className="my__name">My Side Projects</h2>
@@ -93,9 +93,9 @@ const closeAlert = () => {
                 <span className="dot"></span>
                 <p className="title">Project Designer</p>
               </div>
-              <a href="https://ankearaportfolio.vercel.app/about" className="btn__hire">
+              <Link to={"/view"} className="btn__hire">
                   View All <MoveRight size={16} absoluteStrokeWidth />
-              </a>
+              </Link>
             </div>
             
             <Link to={"/view"} className="box__item">
