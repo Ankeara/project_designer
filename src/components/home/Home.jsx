@@ -121,7 +121,7 @@ const closeAlert = () => {
               </a>
             </div>
             
-            <a href="https://my-templatedesign.vercel.app/mobile" target="blank"  className="box__item">
+            <a href="https://my-templatedesign.vercel.app/mobile"  className="box__item">
               <div className="box__detail">
                 <div className="box__img">
                   <img src={Project1} alt="me" />
@@ -140,7 +140,7 @@ const closeAlert = () => {
               </Link>
             </a>
 
-            <a href="https://my-templatedesign.vercel.app/website" target="blank"  className="box__item">
+            <a href="https://my-templatedesign.vercel.app/website"  className="box__item">
               <div className="box__detail">
                 <div className="box__img">
                   <img src={Project3} alt="me" />
@@ -159,7 +159,7 @@ const closeAlert = () => {
               </Link>
             </a>
 
-            <a href="https://my-templatedesign.vercel.app/database" target="blank" className="box__item">
+            <a href="https://my-templatedesign.vercel.app/database" className="box__item">
               <div className="box__detail">
                 <div className="box__img">
                   <img src={Project2} alt="me" />
